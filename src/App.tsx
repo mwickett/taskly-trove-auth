@@ -9,8 +9,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Replace with your Clerk publishable key
-const CLERK_PUBLISHABLE_KEY = "pk_test_REPLACE_THIS";
+const CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZGFzc2llLTc0LmNsZXJrLmFjY291bnRzLmRldiQ";
 
 const App = () => (
   <ClerkProvider publishableKey={CLERK_PUBLISHABLE_KEY}>
