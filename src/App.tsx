@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,7 +13,10 @@ const queryClient = new QueryClient();
 const CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZGFzc2llLTc0LmNsZXJrLmFjY291bnRzLmRldiQ";
 
 const App = () => (
-  <ClerkProvider publishableKey={CLERK_PUBLISHABLE_KEY}>
+  <ClerkProvider 
+    publishableKey={CLERK_PUBLISHABLE_KEY}
+    clerkJSVersion="5.54.0-snapshot.v20250226180848"
+  >
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
