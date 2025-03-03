@@ -15,7 +15,7 @@ const CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZGFzc2llLTc0LmNsZXJrLmFjY291bnRzLmRld
 const App = () => (
   <ClerkProvider 
     publishableKey={CLERK_PUBLISHABLE_KEY}
-    clerkJSVersion="5.54.0-snapshot.v20250226180848"
+    clerkJSVersion="5.55.0-snapshot.v20250303194420"
   >
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
