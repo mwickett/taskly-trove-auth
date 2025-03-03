@@ -1,4 +1,5 @@
-import { SignIn, SignedIn, SignedOut } from "@clerk/clerk-react";
+
+import { SignUp, SignedIn, SignedOut } from "@clerk/clerk-react";
 import TodoApp from "@/components/TodoApp";
 
 const Index = () => {
@@ -8,9 +9,9 @@ const Index = () => {
         <div className="flex flex-col items-center justify-center min-h-screen p-4">
           <div className="mb-8 text-center">
             <h1 className="text-4xl font-bold mb-4">Welcome to TaskMaster</h1>
-            <p className="text-gray-600 dark:text-gray-400">Sign in to manage your tasks</p>
+            <p className="text-gray-600 dark:text-gray-400">Sign up to manage your tasks</p>
           </div>
-          <SignIn />
+          <SignUp />
         </div>
       </SignedOut>
       <SignedIn>
